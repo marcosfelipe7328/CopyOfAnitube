@@ -188,10 +188,6 @@ footer nav {
     color: #fff;
 }
 
-footer nav li {
-    float: left;
-}
-
 header nav a:hover {
     background-color: #2cbf63;
 }
@@ -225,5 +221,9 @@ header nav a:hover {
     #nav-icon {
         display: block;
         line-height: 5px;
+    }
+
+    footer nav {
+        float: left;
     }
 }
