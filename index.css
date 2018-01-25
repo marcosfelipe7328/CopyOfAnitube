@@ -8,6 +8,10 @@ body {
     background-color: #06080a;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -52,16 +56,16 @@ header nav {
     background-color: #009b3a;
 }
 
-header nav ul {
-    display: inline;
-}
-
-header nav .left-list li {
+#top-nav .left{
     float: left;
 }
 
-header nav .right-list li {
+#top-nav .right {
     float: right;
+}
+
+#nav-icon {
+    display: none;
 }
 
 header nav a {
@@ -200,4 +204,28 @@ header nav a:hover {
 
 .grid-episodios h1:hover, footer a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 750px) {
+    /* For mobile phones: */
+    .grid-episodios {
+        grid-template-columns: 100% !important;
+    }
+
+    .anuncio {
+        display: none;
+    }
+
+    #grid-lancamentos {
+        grid-template-columns: 100%;
+    }
+
+    #top-nav .left, #search-icon {
+        display: none;
+    }
+
+    #nav-icon {
+        display: block;
+        line-height: 5px;
+    }
 }
