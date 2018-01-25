@@ -30,10 +30,8 @@ a {
 }
 
 #logo {
-    padding: 0;
-    height: 50px;
-    overflow: auto;
     float: left;
+    height: 50px;
 }
 
 #logo img{
@@ -42,13 +40,13 @@ a {
 
 #login {
     float: right;
-    margin-top: 0;
+    height: 50px;
 }
 
-#login li {
+#login a {
     float: left;
-    display: inline;
-    padding: 0 10 0 10;
+    vertical-align: middle;
+    padding: 15 10 0 10;
 }
 
 header nav {
