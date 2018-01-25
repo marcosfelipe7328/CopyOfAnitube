@@ -206,6 +206,10 @@ header nav a:hover {
 
 @media only screen and (max-width: 750px) {
     /* For mobile phones: */
+    .container {
+        width: 90%;
+    }
+    
     .grid-episodios {
         grid-template-columns: 100% !important;
     }
